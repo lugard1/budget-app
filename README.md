@@ -90,7 +90,7 @@ Clone this repository to your desired folder:
 
 ## 👤Author<a name="author"></a>
 
-### 👤 **Lugard Agu**
+### 👤 **Lugard Agu**<a name="agu-lugard"></a>
 
 - GitHub: [@lugard1](https://github.com/lugard1)
 - Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
@@ -102,11 +102,11 @@ Clone this repository to your desired folder:
  
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add more methods
-- [ ] Add views associated with the models and controllers already created.
-- [ ] Add more categories.
-- [ ] Add more expenses.
-- [ ] Update the style.
+-  Add more methods
+-  Add views associated with the models and controllers already created.
+-  Add more categories.
+-  Add more expenses.
+-  Update the style.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
