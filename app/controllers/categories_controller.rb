@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
   # GET /categories or /categories.json
   def index
     @user = current_user
-    @categories = current_user.categories.order(created_at: :desc)
+    @categories = current_user.categories.includes(:expenses).order(created_at: :desc)
   end
 
   # GET /categories/1 or /categories/1.json
