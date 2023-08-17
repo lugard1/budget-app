@@ -1,5 +1,4 @@
 class ExpensesController < ApplicationController
- 
   # GET /expenses/new
   def new
     @expense = Expense.new
