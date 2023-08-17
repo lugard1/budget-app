@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "Proxima Nova Bold";
-  src: url(../fonts/proximanova-bold.otf) format(opentype);
+  src: url(../fonts/proximanova-bold.otf) format("opentype");
 }
 
 @font-face {
   font-family: "Proxima Nova Light";
-  src: url(../fonts/proximanova-light.otf) format(opentype);
+  src: url(../fonts/proximanova-light.otf) format("opentype");
 }
 
 html {
@@ -41,11 +41,13 @@ html {
   justify-content: center;
 }
 
-.cat-expense-container, .cat-container {
+.cat-expense-container,
+.cat-container {
   margin-bottom: 5rem;
 }
 
-.expense-info, .category-info{
+.expense-info,
+.category-info {
   margin: 0.5rem auto;
   width: 60%;
 }
@@ -93,30 +95,31 @@ html {
   border: none;
 }
 
-.add-cat-btn, .add-exp-btn {
+.add-cat-btn,
+.add-exp-btn {
   background-color: #5fb523;
   color: #fff;
 }
 
-
-.add-cat-btn:hover, .add-exp-btn:hover {
+.add-cat-btn:hover,
+.add-exp-btn:hover {
   background-color: #fff;
   color: #5fb523;
 }
 
 .signout-btn {
-  text-decoration:none;
-  color:#fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .signout-btn:hover {
-  color:#3778c2;
+  color: #3778c2;
   background-color: #fff;
   padding: 5px;
 }
 
 .signin-btn {
-  color:#fff;
+  color: #fff;
   background-color: #3778c2;
 }
 
