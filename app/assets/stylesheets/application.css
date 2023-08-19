@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
 
 @font-face {
   font-family: "Proxima Nova Bold";
@@ -10,13 +10,10 @@
   src: url(../fonts/proximanova-light.otf) format("opentype");
 }
 
-html {
+html, body {
   font-family: "Proxima Nova Light", sans-serif;
   color: var(--text);
-}
-
-body {
-  background: #0e0e0e;
+  background-color: #f0f2f1;
 }
 
 .name-container {
@@ -146,21 +143,4 @@ body {
 .image {
   width: 50px;
   height: 50px;
-} */
-
-
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+}
