@@ -10,7 +10,8 @@
   src: url(../fonts/proximanova-light.otf) format("opentype");
 }
 
-html, body {
+html,
+body {
   font-family: "Proxima Nova Light", sans-serif;
   color: var(--text);
   background-color: #f0f2f1;
