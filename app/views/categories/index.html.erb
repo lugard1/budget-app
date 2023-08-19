@@ -1,0 +1,23 @@
+<%= render partial: 'shared/navbar', locals: { title: 'Categories'} %>
+
+<div id="categories" class="cat-container d-flex flex-column">
+  <% if @categories.empty?%>
+    <h3 class='no-cat text-center fw-bold'>No Category Available</h3>
+  <% else %>
+    <% @categories.each do |category| %>
+    <br>
+    <div class='container d-flex flex-row justify-content-between p-4 align-items-center rounded shadow border-dark'>
+      <img src="<%= category.icon %>" alt=<%= category.name %>, class='image img-fluid img-thumbnail' style="max-width: 80px; max-height: 80px;" />
+      <div class='container-info'>
+        <h2><%= link_to category.name, category_path(category.id), class: 'text-decoration-none fs-5' %></h2>
+        <p class='fw-semibold'>$<%= category.expenses.sum(:amount) %></p>
+      </div>
+      <%= button_to 'Delete', category, method: :delete, data: { turbo: false }, class:'btn btn-outline-danger fs-5' %>
+    </div>
+    <% end %>
+  <% end %>
+</div>
+<br>
+<div class='d-flex flex-column fixed-bottom text-center w-100 p-4', style='background-color: #5fb523;'>
+  <%= link_to "Add New Category", new_category_path, class:'add-cat-btn text-decoration-none border border-white rounded p-3 fs-5 fw-semibold' %>
+</div>
