@@ -7,12 +7,12 @@
     <% @categories.each do |category| %>
     <br>
     <div class='container d-flex flex-row justify-content-between p-4 align-items-center rounded shadow border-dark'>
-      <img src="<%= category.icon %>" alt=<%= category.name %>, class='image img-fluid img-thumbnail' style="max-width: 50px; max-height: 50px;" />
+      <img src="<%= category.icon %>" alt=<%= category.name %>, class='image img-fluid img-thumbnail' style="max-width: 80px; max-height: 80px;" />
       <div class='container-info'>
         <h2><%= link_to category.name, category_path(category.id), class: 'text-decoration-none fs-5' %></h2>
         <p class='fw-semibold'>$<%= category.expenses.sum(:amount) %></p>
       </div>
-      <%= button_to 'Delete', category, method: :delete, data: { turbo: false }, class:'btn btn-outline-danger' %>
+      <%= button_to 'Delete', category, method: :delete, data: { turbo: false }, class:'btn btn-outline-danger fs-5' %>
     </div>
     <% end %>
   <% end %>
